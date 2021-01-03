@@ -8,7 +8,7 @@
 import Foundation
 
 public extension URL {
-    public init(staticString string: StaticString) {
+    init(staticString string: StaticString) {
         guard let url = URL(string: "\(string)") else {
             preconditionFailure("Invalid static URL string: \(string)")
         }

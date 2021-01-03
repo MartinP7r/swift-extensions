@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Character {
+public extension Character {
 
     /// The Hexa-Decimal representation of the characters unicode scalar
     /// - Returns: hex string
