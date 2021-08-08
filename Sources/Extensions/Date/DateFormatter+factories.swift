@@ -18,14 +18,23 @@ public extension DateFormatter {
         return formatter
     }()
 
-    static let pretty: DateFormatter = {
+    static let mediumWithShortTime: DateFormatter = {
+        let formatter = DateFormatter()
+
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .short
+
+        return formatter
+    }()
+
+    static let full: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .full
         formatter.timeStyle = .none
         return formatter
     }()
 
-    static let prettyShort: DateFormatter = {
+    static let medium: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         formatter.timeStyle = .none
